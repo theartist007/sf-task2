@@ -1,0 +1,135 @@
+body {
+	background-color : #d7f2f9;
+}
+@font-face {
+	font-family: MuseoSans300;
+	src: url('Fonts/f2.ttf');
+}
+@font-face {
+	font-family: MuseoSlab700;
+	src: url('Fonts/f4.ttf');
+}
+@font-face {
+	font-family: MuseoSlab300;
+	src: url('Fonts/f3.ttf');
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-image: url('images/nav.png');
+	background-repeat: repeat-x;
+	background-size: 100% 60px;
+	width: 100%;
+	overflow: hidden;
+	height: 60px;
+	position: absolute;
+	top: 0;
+	
+	opacity: .95;
+	font-size: 12px;
+}
+li {
+	float: right;
+}
+li a {
+	display: block;
+	color: #fff;
+	padding: 20px 15px;
+	overflow: hidden;
+	text-shadow: 0 1px 0 #fff;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: center;
+	font-family: MuseoSans300;
+	font-weight: bold;
+
+}
+li a:hover {
+	background-color: rgba(0,0,0,.15);	
+}
+.logo {
+	height: 55px;
+	vertical-align: middle;
+	padding-top: 2px;
+}
+.hb {
+    border-top : 1px solid #777;
+    border-right: 1px solid #000;
+    border-left : 1px solid #000;
+    border-bottom: 1px solid #000;
+   	margin-right: 5px;
+   	position: relative;
+   	top: 20%;
+   	line-height: 0;
+    color: white;
+    padding: 0;
+    vertical-align: middle;
+    font-size: 12px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+.hb a:hover {
+	background-image: url('images/hb hover.png');
+	background-size: contain;
+}
+.first-box {
+	position: absolute;
+	top : 80px; 
+	text-align: center;
+	margin:0 auto;
+	width: 900px;
+	height: auto;
+	border : 1px solid #fff;
+	border-radius: 3px;
+	background-color: #bbe5f2; 
+
+}
+#writing {
+	float: left;
+	padding-left: 20px;
+}
+.button1 {
+	background-color: #00cccc; /* Green */
+    border: 1px solid #777;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 5px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.button2 {
+	background-color: #e6ffff; /* Green */
+    border: 1px solid #777;
+    color: #0066cc;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: bold;
+    cursor: pointer; 
+}
+.button1 a:hover {
+	background-color: rgba(0,204,204,0.5);	
+}
+.button2 a:hover {
+	background-color: rgb(230,255,255);
+}
+.form-box {
+	float: right;
+	background-color: #F2F2F2;
+	width: 300px;
+	padding: 0;
+	height: auto;
+	border : 1px solid #aaa;
+	margin: 10px 10px 20px 10px;
+}
