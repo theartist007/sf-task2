@@ -202,3 +202,49 @@ li a:hover {
 .hover_img a { position:relative; top: -10px; }
 .hover_img a span { position:absolute; display:none; z-index:99; }
 .hover_img a:hover span { display:inline-block; }
+
+.thirdbox {
+	width: 117px;
+	display: inline-block;
+	vertical-align: top;
+}
+.thirdbox h1 {
+	color: #5e838b;
+	font-weight: bold;
+	font-family: Helvetica;
+	font-size: 11px;
+	margin-bottom: 10.5px;
+}
+
+.thirdbox a {
+	line-height: 14px;
+	color: #6e99a2;
+	text-decoration: none;
+}
+#fbside {
+	width: 300px;
+	position: relative;
+	left: -10px;
+}
+
+#fbside a div {
+	height: 20px;
+	width: 77px;
+	background-image: url('images/fb button.png');
+	background-size: 77px 20px;
+}
+
+#fbside a div:hover {
+	background-image: url('images/fb button hover.png');
+}
+#footer {
+	width: 855px;
+	margin: auto;
+	height: 100px;
+	position: relative;
+	top: 40px;
+	left: 50px;
+	font-family: Helvetica;
+	font-size: 9px;
+	padding-bottom: 100px;
+}
