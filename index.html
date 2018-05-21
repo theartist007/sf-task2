@@ -1,111 +1,171 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-	<title>Free Gradebook for Teachers | Learnboost</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<title>Free Gradebook for Teachers | LearnBoost</title>
 </head>
+<style>
+	body {
+	margin: 0;
+	padding: 0;
+	background-image: url(images/background.gif);
+	background-repeat: repeat-x;
+	background-color: #d7f2f9;
+}
+#footer {
+	width: 855px;
+	margin: auto;
+	height: 100px;
+	position: relative;
+	top: -80px;
+	font-family: Helvetica;
+	font-size: 11px;
+}
+#nav {
+	background: #474747 url(images/nav.png);
+	background-repeat: no-repeat;
+	min-width: 1146px;
+	width: 100%;
+	height: 69px;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.40), inset 0 1px rgba(255,255,255,0.10);
+    overflow: hidden;
+    text-align: center;
+}
+</style>
 <body>
-	<ul>
-		<li class="hb" style="margin-right: 15%;"><a href="#">Log In</a></li>
-		<li class="hb" style="margin-left: 20%"><a href="#">Join Now&nbsp;<img src="images/join icon.png" style="width: auto; height: 20px; float: right; position: relative; top: -10px;  "></a></li>
-		<li style="border-right: 1px solid #777; border-left: 1px solid #777;"><a href="#">Blog</a></li>
-		<li style="border-left: 1px solid #777;"><a href="#">For Schools</a></li>
-		<li style="border-left: 1px solid #777;"><a href="#">Tour</a></li>
-		<li style="margin-right: 2%; position: relative;"><img src="images/logo.png" class="logo" ></li>
-	</ul><br><br>
-	<div class="first-box">
-		<img src="images/ribbon.png" class="ribbon">
-
-		<span id="writing"><p style="color: #cc0044; font-family: MuseoSlab700; font-size: 42px;">Great classrooms<br> start here</p>
-			<pre style="color: #333; font-family: MuseoSlab300; font-size: 20px; padding-top: 0; padding-left: 10px;">All the software you need to manage
-your classroom and school. <b>Save time
-and money</b> with LearnBoost.</pre>
-		<label class="button1">	<a href="#">Try our Demo</a></label><label class="button2"><a href="#">Watch our Video</a></label></span>
-	<div class="form-box">
-		<p style="background-color: #99cc00; width: 100%; color: #222; font-family: MuseoSans300; font-size: 30px; margin: 0 ; padding: 10px 0px 10px 0px; font-weight: bolder;">Sign Up</p>
-		<img src="images/f1 fb.png" style="padding: 10px 10px 10px 15px;"><img src="images/f1 g.png" style="padding: 10px 15px 10px 10px">
-		<hr style="color: #ccc; width: 45%; float: left;"> or <hr style="color: #ccc; width: 45%; float: right;">	
-		<form>
-			<div class="form-des" style="float:left; padding-left: 15px; padding-right: 15px; text-indent: 5px;">
-  			<div for="firstname" >First Name</div>
-  			<input id="firstname" name="firstname" size="15" class="textbox" type="text"/>
+	<img src="images/white bg.png" id="white-bg">
+	<div id="nav">
+		<div id="nav-elements">
+			<a href="#"><img src="images/logo.png"></a>
+			<ul class="nav-icons">
+				<li><a href="#" style="border-left: 1px solid #535353;">Tour</a></li>
+				<li><a href="#">For Schools</a></li>
+				<li><a href="#">Blog</a></li>
+			</ul>
+			<ul class="nav-buttons">
+			<li><a href="#" style="position: relative;top: -5px;">Join Now <img src="images/joinnow.png"></a></li>
+				<li style="position: relative; top: -5px;"><a href="#">Log In</a></li>
+			</ul></div>
+	</div>
+		<div id="firstbox">
+		<div id="top-bluebar"></div>
+		<div id="cloud"></div>
+		<form class="signup">
+			<div id="head">
+				<div id="signup-head">
+					Sign Up
+				</div>	
 			</div>
-
-			<div style="float:left; text-indent: 5px;" class="form-des">
- 			 <div for="lastname">Last Name</div>
- 			 <input id="lastname" name="lastname" size="15" class="textbox" type="text" />
-			</div>
-			<div class="form-des" style="padding-left: 15px; text-indent: 5px;">
-				<div for="Email">Email</div>
-				<input type="text" name="Email" class="textbox" size="20"/>
-			</div>
-			<div class="form-des" style="padding-left: 15px; text-indent: 5px;">
-				<div for="Password">Password</div>
-				<input type="Password" name="password" class="textbox" size="20"/>
-			</div>
-			<div class="form-des" style="padding-left: 15px; text-indent: 5px; padding-bottom: 0;">
-				<label for="user">I am a &nbsp;</label>
-				<label ><select name="user" style=" padding: 20px 25px 10px 10px; background-image: url('images/dropdown.jpeg'); background-repeat: no-repeat; background-size: 100% 30px; width: 150px; height: 30px;" >
-					<option value="Teacher">Teacher</option>
-					<option value="Parent">Parent</option>
-					<option value="Student">Student</option>
-					<option value="Administrator">Administrator</option>
-				</select></label>
-			</div>
-			<div class="form-des" style="padding-left: 15px; font-size: 10px; padding-bottom: 0;">
-				<input type="checkbox" name="term">
-				<label for="terms">I want to receive learnboost news.</label>
-			</div>
-			<div class="form-des" style="padding-left: 15px; font-size: 9px; text-indent: 5px;">By joining, I agree to the <a style="color: blue;">Terms</a>
-				<div class="button-join"><a href="#">Join</a></div></div>
+			<div id="signupbody">
+			<div id="social">
+					<a href="#" class="social">
+						<img src="images/fb.png">
+					</a>
+					<a href="#" class="social">
+						<img src="images/google.png">
+					</a>
+				</div>
+				<div id="or">or</div>
+				<div id="regform">
+					<div class="block" id="name">
+						<label>First name</label>
+						<label id="lastname">Last name</label><br>
+						<input type="text" id="firstname">
+						<input type="text">
+					</div>
+					<div class="block">
+						<label>Email</label> <br>
+						<input type="email" id="email">
+					</div>
+					<div class="block">
+						<label>Password</label> <br>
+						<input type="password" id="pwd">
+					</div>
+					<div class="block" id="selectbox">
+						<label>I am a</label>
+						<select>
+							<option selected>Teacher</option>
+							<option>Parent</option>
+							<option>Student</option>
+							<option>Administrator</option>
+						</select>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox"> I want to receive learnboost news.
+						</label>
+					</div>
+					<div class="buttonbox">
+						<label>By joining, I agree to the <a href="#">Terms.</a></label>
+						<input type="button" name="join" value="Join">
+					</div></div></div>
 		</form>
+		<h1> 
+			Great classrooms<br>start here</h1>
+		<p>All the software you need to manage<br>your classroom and school. <strong>Save time<br>and money</strong> with LearnBoost.</p>
+		<a href="#" id="demo"><div></div></a>
+		<a href="#" id="video"><div></div></a>
+		</div>
+	<div id="bottomtop"></div>
+	<div id="bottom">
+	<h1>At a glance</h1>
+	<div class="content">
+	<h2><a href="#">Gradebook</a></h2>
+	<p>	Our beautiful design and wonderful user experience makes you wonder why you've been using other gradebook software.<br>
+	<a href="#">LEARN MORE <img src="images/arrow.png"></a></p>
+		</div>
+			<div class="content">
+			<h2><a href="#">Lesson Plans</a></h2>
+			<p>
+				With LearnBoost, you can create and manage lesson plans with our fantastic visual editor. Plus it is integrated with state standards. <br>
+				<a href="#">LEARN MORE <img src="images/arrow.png"></a>
+			</p>
+		</div>
+		<div class="content">
+			<h2><a href="#">Parent & Student</a></h2>
+			<p>
+				Share student progress with parents and students on LearnBoost’s safe and secure platform. <br>
+				<a href="#">LEARN MORE <img src="images/arrow.png"></a>
+			</p>
+		</div>
+		<img src="images/gradebook.png" id="gb">
+		<img src="images/lesson.png" id="les">
+		<img src="images/parents.png" id="par">
 	</div>
-	</div>
-	<br>
-	<div class="secondbox">
-		<h2 style="font-family: MuseoSlab700; color: #cc0044; font-size: 24px; padding: 10px 10px 20px 40px; float: left;">At a glance </h2>
-		<img src="images/icon1.png" class="icon"><pre class="icontext"><b> Gradebook</b>
-Our beautiful design and wonderful user 
-experience makes you wonder why you've been 
-using other gradebook software.<p class="hover_img"><a href="#" style="color: blue; text-decoration: none;">Learn More &nbsp;<span><img src="images/arrow.png"></span></a></p><hr style="color: #f2f2f2; width: 100%;"></pre>
-	<img src="images/icon2.png" class="icon"><pre class="icontext"><b> Lesson Plans</b>
-With LearnBoost, you can create and manage 
-lesson plans with our fantastic visual editor. Plus 
-it is integrated with state standards.<p class="hover_img"><a href="#" style="color: blue; text-decoration: none;">Learn More &nbsp;<span><img src="images/arrow.png"></span></a></p><hr style="color: #f2f2f2; width: 100%;"></pre>
-	<img src="images/icon3.png" class="icon" style="margin-left: 10px; margin-right: 20px;"><pre class="icontext"><b> Parent & Student</b>
-Share student progress with parents and 
-students on LearnBoost’s safe and secure 
-platform.<p class="hover_img"><a href="#" style="color: blue; text-decoration: none;">Learn More &nbsp;<span><img src="images/arrow.png"></span></a></p><hr style="color: #f2f2f2; width: 100%;"></pre>
-</div>
-<div id="footer">
+	<div id="bottombottom"></div>
+	<div id="feedback"><p> Feedback </p></div>
+	<div id="footer">
 		<div class="thirdbox">
 			<h1>Company</h1>
-			<a href="#">About</a><br/>
-			<a href="#">Feature Tour</a> <br/>
-			<a href="#">Blog</a> <br/>
-			<a href="#">Facebook</a> <br/>
-			<a href="#">Twitter</a> <br/>
-			<a href="#">Edu News</a> <br/>
+			<a href="#">About</a><br>
+			<a href="#">Feature Tour</a><br>
+			<a href="#">Blog</a><br>
+			<a href="#">Facebook</a><br>
+			<a href="#">Twitter</a><br>
+			<a href="#">Edu News</a><br>
 		</div>
 		<div class="thirdbox">
 			<h1>Resources</h1>
-			<a href="#">Case Studies</a><br/>
-			<a href="#">CommonCore</a><br/>
-			<a href="#">Help / FAQ</a><br/>
-			<a href="#">Press</a><br/>
-			<a href="#">Security</a><br/>
-			<a href="#">Schools</a><br/>
-			<a href="#">Schools List</a><br/>
+			<a href="#">Case Studies</a><br>
+			<a href="#">CommonCore</a><br>
+			<a href="#">Help / FAQ</a><br>
+			<a href="#">Press</a><br>
+			<a href="#">Security</a><br>
+			<a href="#">Schools</a><br>
+			<a href="#">Schools List</a><br>
 		</div>
 		<div class="thirdbox">
 			<h1>Legal</h1>
-			<a href="#">Privacy Policy</a><br/>
-			<a href="#">Terms of Use</a><br/>
+			<a href="#">Privacy Policy</a><br>
+			<a href="#">Terms of Use</a> <br>
 		</div>
-		<div class="thirdbox" id="fbside">
-			<h1>&copy; 2010 - 2017 LearnBoost, Inc. All rights reserved.</h1>
+		<div class="thirdbox" id="fb-like">
+			<h1>© 2010 - 2017 LearnBoost, Inc. All Rights reserved.</h1>
 			<a href="#" title="Like LearnBoost’s Page on Facebook"><div></div></a>
 		</div>
-	</div> 
+	</div>
 </body>
 </html>
